@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #e0e0e0;
+    align-items: center;
+}
+
+.card {
+    width: 400px;
+}
+
+.card .card-header {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.card .card-body {
+    width: 100%;
+    background-color: white;
+    padding: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+
+.card .card-header .author {
+    color: #333;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    width: 60%;
+    height: 60px;
+    display: flex;
+    background-color: white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.card .card-header .author::before{
+    background-color: transparent;
+    border-bottom-left-radius: 30px;
+    box-shadow: -30px 30px 0 white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 60px;
+    width: 40%;
+    content: "";
+}
+
+.card .card-header .more{
+    font-weight: 600;
+    color: #333;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 50px;
+    width: calc(40% - 10px);
+    background: #fff;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+
+.card .card-body img {
+    border-radius: 30px;
+    width: 100%;
+}
+
+.card .card-body button {
+    width: 100%;
+    padding: 10px;
+    border: unset;
+    background-color: orangered;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 30px;
+}
